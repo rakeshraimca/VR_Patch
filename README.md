@@ -5,9 +5,11 @@ I didn't yet know that it's the best available solution on the market for the VR
 
 I've tried everything on my Xperia XZ Premium, but nothing led to success. Some Magisk modules only let Daydream alone launch, some patches let some apps work. Some patches only let the VR apps work in 2D only. Some even bootlooped my Xperia. Then I took apart all of the works I've collected by then, spent some time on a little research, and voila, here you have this module.;
 
-This module will enable the necessary build.prop strings, as well as android.software.vr.mode and android.hardware.vr.high_performance features for any Xperia, since they have some extra strings in build.prop that, as I assume, other phones don't. It may or **may not** work your Android device, too.
+This module is designed to enable the necessary build.prop strings, as well as android.software.vr.mode and android.hardware.vr.high_performance features, and has some extra lines for the Xperia phones. I believe it won't mess up any other phone.
 
-Since this is a very low-level kind of file about the features provided, it WILL work on most Snapdragon-based devices with more-or-less pure Android, though. I'm pretty sure it might work on some MTK, Exynos or Kirin-based devices, too, as well as devices based on other CPUs.
+Since this is a very low-level kind of file about the features provided, it MUST work on ALL devices with more-or-less pure Android (Lineage OS or AOSP), whether it is Snapdragon, Exynos, MTK or Kirin-based.
+
+If the FW of your device is heavily modified, the module **may not** work, because the **build.prop file might NOT be where it generally should**, like on Huawei phones. But you're more than welcome to try anyway, since this module is the only of its kind in the Magisk Repo, as of July 2018 :-D
 
 I also used this guide, which you may feel free to use yourself on your specific device:
 https://www.xda-developers.com/force-daydream-vr-compatibility/
